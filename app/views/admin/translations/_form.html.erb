@@ -1,0 +1,32 @@
+<% form_for [:admin, @translation] do |f| -%>
+  <h2>
+    <%=t(".translating_key_from_default_to", 
+          :key => @translation.name.titleize,
+          :from => Refinery::I18n.locales[Refinery::I18n.default_locale], 
+          :to => Refinery::I18n.locales[@translation.locale]) %>
+  </h2>
+  <div class='field'>
+    <%= f.label :untranslated, t('.untranslated') -%>
+    <% if @translation.wym %>
+      <%= sanitize @translation.untranslated, :tags => %w(p br), :attributes => [nil] %>
+    <% else %>
+      <p><%= sanitize @translation.untranslated, :tags => [nil], :attributes => [nil] %></p>
+    <% end %>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :value, t('.value') -%>
+    <% if @translation.wym %>
+      <%= f.text_area :value, :rows => 20, :class => "wymeditor widest" -%>
+    <% else %>
+      <%= f.text_field :value -%>
+    <% end %>
+  </div>
+  
+  <div class='field'>
+    <%= f.label :fresh, t('.fresh') -%>
+    <%= f.check_box :fresh -%>
+  </div>
+  
+  <%= render :partial => "/shared/admin/form_actions", :locals => {:f => f, :continue_editing => false} %>
+<% end -%>

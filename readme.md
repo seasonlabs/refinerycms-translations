@@ -15,11 +15,14 @@ Features:
 
 Install the plugin
 
-> gem install refinerycms-translations
+Add this line to your Gemfile:
+gem 'refinerycms-translations', :git => 'git@github.com:seasonlabs/refinerycms-translations.git'
+
+Install the gem
+> bundle install
 
 Copy the migration file
-
-> rake refinerycms:translation:install
+> rails generate refinerycms_pepes
 
 Run the migration
 

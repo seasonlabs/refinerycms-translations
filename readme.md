@@ -57,3 +57,5 @@ Using a block:
 > &lt;/div&gt;
 
 Note: for_string and for_block both take the option "wym" argument to edit the translation with the WYM editor. for_block default to true, for_string default to false.
+
+Based on code from http://github.com/unixcharles

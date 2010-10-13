@@ -16,7 +16,7 @@ Features:
 Install the plugin
 
 Add this line to your Gemfile:
-gem 'refinerycms-translations', :git => 'git@github.com:seasonlabs/refinerycms-translations.git'
+> gem 'refinerycms-translations', :git => 'git@github.com:seasonlabs/refinerycms-translations.git'
 
 Install the gem
 > bundle install

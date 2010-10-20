@@ -1,4 +1,4 @@
-=RefineryCMS-Translation
+=RefineryCMS Translations
 
 A simple approach to content translation for [RefineryCMS](http://refinerycms.org).
 
@@ -39,7 +39,7 @@ Make sure you have correctly set the following setting in Refinery: 'i18n_fronte
 
 Given the following code in you view:
 
-  &lt;h1&gt;&lt;%= RefinerySetting.site_name %&gt;&lt;/h1&gt;
+  <h1><%= RefinerySetting.site_name %></h1>;
 
 You can do:
 

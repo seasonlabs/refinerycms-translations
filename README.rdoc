@@ -43,23 +43,23 @@ Given the following code in you view:
 
 You can do:
 
-  &lt;h1&gt;&lt;%= Translation.for_string('site name', RefinerySetting.site_name) %&gt;&lt;/h1&gt;
+  <h1><%= Translation.for_string('site name', RefinerySetting.site_name) %></h1>;
 
 Or for more complex text:
 
-  &lt;div id='footer'&gt;
-  &lt;p&gt;Please give us a call! 1-877-555-1234&lt;/p&gt;
-  &lt;p&gt;Copyright 2010 - Your Company Name&lt;/p&gt;
-  &lt;/div&gt;
+  <div id='footer'>
+  <p>Please give us a call! 1-877-555-1234</p>
+  <p>Copyright 2010 - Your Company Name</p>;
+  </div>
 
 Using a block:
 
-  &lt;div id='footer'&gt;
-  &lt;% Translate.for_block('footer') do %&gt;
-  &lt;p&gt;Please give us a call! 1-877-555-1234&lt;/p&gt;
-  &lt;p&gt;Copyright 2010 - Your Company Name&lt;/p&gt;
-  &lt;% end %&gt;
-  &lt;/div&gt;
+  <div id='footer'>
+  <% Translate.for_block('footer') do %>
+  <p>Please give us a call! 1-877-555-1234</p>
+  <p>Copyright 2010 - Your Company Name</p>
+  <% end %>
+  </div>
 
 Note: for_string and for_block both take the option "wym" argument to edit the translation with the WYM editor. for_block default to true, for_string default to false.
 

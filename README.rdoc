@@ -1,4 +1,4 @@
-## RefineryCMS-Translation ##
+=RefineryCMS-Translation
 
 A simple approach to content translation for [RefineryCMS](http://refinerycms.org).
 
@@ -11,7 +11,7 @@ Features:
 * Translation are cached
 * When the content change, the translation is marked as out-dated to ease site maintenance.
 
-### Install ###
+==Install
 
 Install the plugin
 
@@ -22,7 +22,7 @@ Install the gem
 > bundle install
 
 Copy the migration file
-> rails generate refinerycms_pepes
+> rails generate refinerycms_translations
 
 Run the migration
 
@@ -30,7 +30,7 @@ Run the migration
 
 Make sure you have correctly set the following setting in Refinery: 'i18n_frontend_translation_locales', 'i18n_translation_default_frontend_locale'
 
-### Usage ###
+==Usage
 
 Given the following code in you view:
 

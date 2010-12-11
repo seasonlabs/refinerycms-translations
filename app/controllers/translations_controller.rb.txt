@@ -20,7 +20,7 @@ class TranslationsController < ApplicationController
 protected
 
   def find_all_translations
-    @translations = Translations.find(:all, :order => "position ASC")
+    @translations = Translations.all
   end
 
   def find_page

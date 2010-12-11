@@ -26,6 +26,12 @@ For stable version
 Install the gem
   bundle install
 
+I couldn't install by previous methods, so I added this plugin as engine
+  Firstly I forked this project, otherwise github didn't allow me to check it out and after:
+  git clone git@github.com:kritik/refinerycms-translations.git
+  mv refinerycms_translations translations
+  gem 'refinerycms-translations',:path => 'vendor/engines', :require=>'translations'
+
 Copy the migration file
   rails generate refinerycms_translations
 

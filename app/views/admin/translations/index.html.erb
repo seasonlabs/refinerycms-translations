@@ -5,7 +5,7 @@
     </li>
   <% if !searching? and Translation.count > 1 %>
     <li>
-      <%= link_to t('refinery.reorder', :what => "Translations"), admin_translations_url, :id => "reorder_action", :class => "reorder_icon" %>
+      <%= link_to t('.reorder', :what => "Translations"), admin_translations_url, :id => "reorder_action", :class => "reorder_icon" %>
       <%= link_to t('refinery.reorder_done', :what => "Translations"), admin_translations_url, :id => "reorder_action_done", :style => "display: none;", :class => "reorder_icon" %>
     </li>
   <% end %>

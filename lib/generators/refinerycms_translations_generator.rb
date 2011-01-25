@@ -1,9 +1,6 @@
 class RefinerycmsTranslations < Refinery::Generators::EngineInstaller
   
   source_root File.expand_path('../../', __FILE__)
-
-  raise 'bouh'
-
   engine_name "translations"
 
 	translation_root = Pathname.new(File.expand_path(File.dirname(__FILE__) << "/../.."))

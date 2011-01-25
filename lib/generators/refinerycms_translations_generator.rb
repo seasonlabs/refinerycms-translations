@@ -18,7 +18,7 @@ class RefinerycmsTranslations < Refinery::Generators::EngineInstaller
 	  end
 
 	  copies = [
-	    {:from => %w(db migrate), :to => %w(db migrate), :filename => "20100705210405_create_translations.rb"}
+	    {:from => %w(db migrate), :to => %w(db migrate), :filename => "create_translations.rb"}
 	  ]
 		copies.each do |copy|
 	    copy_from = translation_root.join(copy[:from].join(File::SEPARATOR), copy[:filename])

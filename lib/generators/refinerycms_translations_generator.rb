@@ -3,7 +3,7 @@ class RefinerycmsTranslations < Refinery::Generators::EngineInstaller
   source_root File.expand_path('../../', __FILE__)
   engine_name "translations"
 
-	translation_root = Pathname.new(File.expand_path(File.dirname(__FILE__) << "/../.."))
+	translation_root = Pathname.new(File.expand_path(File.dirname(__FILE__) << "/.."))
 	rails_root = if defined?(Rails.root)
   	Rails.root
 	elsif defined?(RAILS_ROOT)

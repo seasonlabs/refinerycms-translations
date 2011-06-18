@@ -12,16 +12,16 @@ en:
         no_items_yet: There are no translations yet. Click "Create a new Translation" to add your first translation.
         change_language: Select the language to translate.
         all_language: All
-        language: "Translations for '{{language}}'"
+        language: "Translations for '%{language}'"
       singular_name:
         view_live: View this translation live <br/><em>(opens in a new window)</em>
         edit: Edit this translation
         delete: Remove this translation forever
       form:
         fresh: "Mark this translation as fresh when you're done"
-        translating_key_from_default_to: "Translate '{{key}}' from '{{from}}' to '{{to}}'"
+        translating_key_from_default_to: "Translate '%{key}' from '%{from}' to '%{to}'"
         untranslated: "Untranslated content"
-        value: "You're translation"
+        value: "Your translation"
       translation:
         edit: Edit this translation
         delete: Delete this translation

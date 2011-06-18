@@ -3,7 +3,7 @@
     <%=t(".translating_key_from_default_to", 
           :key => @translation.name.titleize,
           :from => Refinery::I18n.locales[Refinery::I18n.default_locale], 
-          :to => Refinery::I18n.locales[@translation.locale]) %>
+          :to => Refinery::I18n.locales[@translation.locale.to_sym]) %>
   </h2>
   <div class='field'>
     <%= f.label :untranslated, t('.untranslated') -%>

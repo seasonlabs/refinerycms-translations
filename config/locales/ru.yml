@@ -1,0 +1,28 @@
+ru:
+  plugins:
+    translations:
+      title: Переводы
+  admin:
+    translations:
+      index:
+        create_new: Создать новый Перевод
+        reorder: Поменять порядок Переводов
+        reorder_done: Порядок изменен
+        sorry_no_results: Извините! Ничего не найдено.
+        no_items_yet: Пока нет ни одного перевода. Нажмите "Создать новый Перевод" чтобы добавить ваш первый перевод.
+        change_language: Выберете язык для Перевода.
+        all_language: Все
+        language: "Перевод для '%{language}'"
+      singular_name:
+        view_live: Просмотреть этот Перевод <br/><em>(в новом окне)</em>
+        edit: Исправить этот Перевод
+        delete: Удалить этот Перевод
+      form:
+        fresh: "Отметить этот Перевод как исправленный"
+        translating_key_from_default_to: "Перевести '%{key}' с '%{from}' на '%{to}'"
+        untranslated: "Оригинал"
+        value: "Ваш Перевод"
+      translation:
+        edit: Исправить этот перевод
+        delete: Удалить этот перевод
+        not_fresh: Нужно обновить
